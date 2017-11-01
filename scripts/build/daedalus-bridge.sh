@@ -6,6 +6,8 @@ set -o pipefail
 
 echo "Building Daedalus Bridge..."
 
+# Cleaning node modules, bower components, etc.
+./scripts/clean/daedalus-bridge.sh
 
 # We have to build Cardano SL because there's a code in Haskell
 # codebase that needs to be recompiled for Bridge building.
